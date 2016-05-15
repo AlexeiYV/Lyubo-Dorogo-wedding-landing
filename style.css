@@ -1,0 +1,337 @@
+/* line 5, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url('fonts/ProximaNova-Light.eot?1455504538');
+  src: url('fonts/ProximaNova-Light.eot?&1455504538#iefix') format('embedded-opentype'), url('fonts/ProximaNova-Light.woff?1455504538') format('woff'), url('fonts/ProximaNova-Light.ttf?1455504538') format('truetype'), url('fonts/ProximaNova-Light.svg?1455504538') format('svg');
+}
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url('fonts/ProximaNova-Regular.eot?1455504538');
+  src: url('fonts/ProximaNova-Regular.eot?&1455504538#iefix') format('embedded-opentype'), url('fonts/ProximaNova-Regular.woff?1455504536') format('woff'), url('fonts/ProximaNova-Regular.ttf?1455504538') format('truetype'), url('fonts/ProximaNova-Regular.svg?1455504538') format('svg');
+}
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url('fonts/ProximaNova-Bold.eot?1455504590');
+  src: url('fonts/ProximaNova-Bold.eot?&1455504590#iefix') format('embedded-opentype'), url('fonts/ProximaNova-Bold.woff?1455504590') format('woff'), url('fonts/ProximaNova-Bold.ttf?1455504590') format('truetype'), url('fonts/ProximaNova-Bold.svg?1455504590') format('svg');
+}
+@font-face {
+  font-family: "Proxima Nova Bold Italic";
+  src: url('fonts/ProximaNova-Boldit.eot?1455504538');
+  src: url('fonts/ProximaNova-Boldit.eot?&1455504538#iefix') format('embedded-opentype'), url('fonts/ProximaNova-Boldit.woff?1455504538') format('woff'), url('fonts/ProximaNova-Boldit.ttf?1455504538') format('truetype'), url('fonts/ProximaNova-Boldit.svg?1455504538') format('svg');
+}
+@font-face {
+  font-family: "Maiola Pro Regular";
+  src: url('fonts/MaiolaPro.eot?1455945234');
+  src: url('fonts/MaiolaPro.eot?&1455945234#iefix') format('embedded-opentype'), url('fonts/MaiolaPro.woff?1455945234') format('woff'), url('fonts/MaiolaPro.ttf?1455945234') format('truetype'), url('fonts/MaiolaPro.svg?1455945234') format('svg');
+}
+@font-face {
+  font-family: "Maiola Pro Italic";
+  src: url('fonts/MaiolaPro-Italic.eot?1455945212');
+  src: url('fonts/MaiolaPro-Italic.eot?&1455945212#iefix') format('embedded-opentype'), url('fonts/MaiolaPro-Italic.woff?1455945212') format('woff'), url('fonts/MaiolaPro-Italic.ttf?1455945212') format('truetype'), url('fonts/MaiolaPro-Italic.svg?1455945212') format('svg');
+}
+/* line 35, sass/_typography.scss */
+body {
+  font-family: "Proxima Nova Regular";
+  font-size: 100%;
+}
+
+/* line 40, sass/_typography.scss */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #8B8B8B;
+}
+/* line 6, ../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+a:active, a:focus {
+  outline: none;
+}
+
+/* line 45, sass/_typography.scss */
+h2 {
+  color: #E8A600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 52, sass/_typography.scss */
+p {
+  font-family: "Maiola Pro Regular";
+  color: #8B8B8B;
+}
+
+/* line 57, sass/_typography.scss */
+.heading--big {
+  color: #344996;
+  font-size: 3rem;
+  font-family: "Proxima Nova Bold";
+}
+
+/* line 1, sass/_basic.scss */
+.top-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: all 0.75s;
+  z-index: 100;
+}
+
+/* line 10, sass/_basic.scss */
+.site-menu {
+  text-align: center;
+  margin-top: 0.5em;
+}
+/* line 14, sass/_basic.scss */
+.site-menu__item {
+  display: inline-block;
+}
+/* line 17, sass/_basic.scss */
+.site-menu__item:first-cild {
+  margin-left: 0;
+}
+/* line 21, sass/_basic.scss */
+.site-menu__item-link {
+  font-size: 0.8rem;
+  font-family: "Proxima Nova Light";
+  margin-left: .5em;
+}
+/* line 27, sass/_basic.scss */
+.site-menu__item-number {
+  font-size: .7em;
+  font-family: "Proxima Nova Bold Italic";
+}
+/* line 33, sass/_basic.scss */
+.site-menu__item:nth-child(1) .site-menu__item-number {
+  color: #E8A600;
+}
+/* line 33, sass/_basic.scss */
+.site-menu__item:nth-child(2) .site-menu__item-number {
+  color: #F98F5B;
+}
+/* line 33, sass/_basic.scss */
+.site-menu__item:nth-child(3) .site-menu__item-number {
+  color: #FFB3C6;
+}
+/* line 33, sass/_basic.scss */
+.site-menu__item:nth-child(4) .site-menu__item-number {
+  color: #AC0B2C;
+}
+
+/* line 40, sass/_basic.scss */
+.site-logo {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+/* line 45, sass/_basic.scss */
+.site-logo object {
+  width: 100%;
+  height: auto;
+}
+
+/* line 51, sass/_basic.scss */
+.scroll-icon {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 59, sass/_basic.scss */
+.section {
+  text-align: center;
+  padding: 10% 1rem;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* line 67, sass/_basic.scss */
+.section--hero-unit {
+  display: table;
+  width: 100%;
+  background-image: url('images/hero-unit-clear-bg.jpg?1455436230');
+  background-size: cover, cover;
+  background-position: 50% 50%;
+}
+/* line 78, sass/_basic.scss */
+.section--instruction__steps-list {
+  margin-top: 1rem;
+}
+/* line 82, sass/_basic.scss */
+.section--instruction__step-item {
+  color: #E8A600;
+  display: block;
+  padding: 1rem 0 1rem 3rem;
+  text-align: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-top: 0.7rem;
+}
+/* line 94, sass/_basic.scss */
+.section--instruction__step-item:nth-child(1) {
+  margin-top: 0;
+  background-image: url('images/step-1-mobile-2x.png?1456120983');
+}
+/* line 101, sass/_basic.scss */
+.section--instruction__step-item:nth-child(2) {
+  background-image: url('images/step-2-mobile-2x.png?1456121105');
+  color: #F98F5B;
+}
+/* line 108, sass/_basic.scss */
+.section--instruction__step-item:nth-child(3) {
+  background-image: url('images/step-3-mobile-2x.png?1456121138');
+  color: #FFB3C6;
+}
+/* line 117, sass/_basic.scss */
+.section--socials {
+  display: table;
+  background-image: url('images/section-socials-bg.jpg?1456126165');
+}
+/* line 124, sass/_basic.scss */
+.section .socials_link {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-size: 3rem 3rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+/* line 136, sass/_basic.scss */
+.section .socials_link:last-child {
+  margin-right: 0;
+}
+/* line 140, sass/_basic.scss */
+.section .socials_link--facebook {
+  background-image: url('images/facebook-icon.svg?1456828522');
+}
+/* line 144, sass/_basic.scss */
+.section .socials_link--insta {
+  background-image: url('images/insta-icon.svg?1456828542');
+}
+/* line 148, sass/_basic.scss */
+.section .socials_link--vkontakte {
+  background-image: url('images/vkontakte-icon.svg?1456828555');
+}
+/* line 152, sass/_basic.scss */
+.section .socials_link--gplus {
+  background-image: url('images/gplus-icon.svg?1456828584');
+}
+/* line 157, sass/_basic.scss */
+.section__title {
+  font-family: "Proxima Nova Bold";
+  text-transform: uppercase;
+  color: #344996;
+}
+/* line 163, sass/_basic.scss */
+.section__title-small-span {
+  font-size: 0.8em;
+  display: block;
+  text-transform: none;
+  font-family: "Proxima Nova Light";
+}
+/* line 170, sass/_basic.scss */
+.section__overlay {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/* line 182, sass/_basic.scss */
+.section__content-wrapper {
+  display: table-cell;
+  position: relative;
+  z-index: 2;
+  vertical-align: middle;
+}
+/* line 189, sass/_basic.scss */
+.section img {
+  display: block;
+  margin: 1rem auto;
+  width: 3rem;
+}
+
+/* line 196, sass/_basic.scss */
+.mobile-like {
+  text-transform: uppercase;
+  color: #344996;
+  font-family: "Proxima Nova Bold";
+}
+
+/* line 202, sass/_basic.scss */
+.collapsed {
+  transform: translateY(-100%);
+}

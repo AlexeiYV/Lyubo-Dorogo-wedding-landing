@@ -1,0 +1,61 @@
+@include font-face("Proxima Nova Light",
+  font-files("ProximaNova-Light.woff", "ProximaNova-Light.ttf", "ProximaNova-Light.svg"),
+  "ProximaNova-Light.eot"
+);
+
+@include font-face("Proxima Nova Regular",
+  font-files("ProximaNova-Regular.woff", "ProximaNova-Regular.ttf", "ProximaNova-Regular.svg"),
+  "ProximaNova-Regular.eot"
+);
+
+@include font-face("Proxima Nova Bold",
+  font-files("ProximaNova-Bold.woff", "ProximaNova-Bold.ttf", "ProximaNova-Bold.svg"),
+  "ProximaNova-Bold.eot"
+);
+
+@include font-face("Proxima Nova Bold Italic",
+  font-files("ProximaNova-Boldit.woff", "ProximaNova-Boldit.ttf", "ProximaNova-Boldit.svg"),
+  "ProximaNova-Boldit.eot"
+);
+
+@include font-face("Maiola Pro Regular",
+  font-files("MaiolaPro.woff", "MaiolaPro.ttf", "MaiolaPro.svg"),
+  "MaiolaPro.eot"
+);
+
+@include font-face("Maiola Pro Italic",
+  font-files("MaiolaPro-Italic.woff", "MaiolaPro-Italic.ttf", "MaiolaPro-Italic.svg"),
+  "MaiolaPro-Italic.eot"
+);
+
+
+
+
+
+body {
+  font-family: "Proxima Nova Regular";
+  font-size: 100%;
+}
+
+a {
+  @include unstyled-link;
+  color: $middle-grey;
+}
+
+h2 {
+  color: $gold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-family: "Maiola Pro Regular";
+  color: $middle-grey;
+}
+
+.heading--big {
+  color: $dark-blue;
+  font-size: 3rem;
+  font-family: "Proxima Nova Bold";
+}

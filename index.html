@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Организация свадьбы за LIKE - Свадебное агентство "Любо-Дорого"</title>
+  <link rel="stylesheet" href="./libs/fullpage/jquery.fullpage.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="site-logo">
+      <object data="images/logo_blue.svg" type="image/svg+xml"></object>
+    </div>
+    <ul class="site-menu">
+      <li class="site-menu__item"><a href="#" class="site-menu__item-link"><span class="site-menu__item-number">01 </span>Старт</a></li>
+      <li class="site-menu__item"><a href="#" class="site-menu__item-link"><span class="site-menu__item-number">02 </span>Мы в сети</a></li>
+      <li class="site-menu__item"><a href="#" class="site-menu__item-link"><span class="site-menu__item-number">03 </span>Условия </a></li>
+      <li class="site-menu__item"><a href="#" class="site-menu__item-link"><span class="site-menu__item-number">04 </span>Контакты</a></li>
+    </ul>
+  </div>
+  <object data="images/sroll-icon.svg" class="scroll-icon"></object>
+  <div class="js-fullpage-wrapper">
+    <div class="section section--hero-unit">
+      <div class="section__overlay"></div>
+      <div class="section__content-wrapper">
+        <h1 class="section__title">Организация свадьбы <span class="section__title-small-span">за </span></h1>
+        <div class="visible-mobile mobile-like">Like</div>
+      </div>
+    </div>
+    <div class="section section--instruction">
+      <h2>Инструкция для невесты</h2>
+      <p>Для участия в акции нужно сделать всего 3 простых шага. Сделай селфи-фото с любимым человеком. Загрузи фото в нашей группе в твоей любимой социальной сети. Лайкни запись об акции или попроси друзей помочь тебе сделать необходимое кол-во лайков. Приз того стоит - первые десять невест смогут заказать организацию свадьбы за 5000 грн. Невеста, которая станет 50 - получит 50% скидку. И наконец счастливица, сделавшая 100 лайк - получит организацию свадьбы в подарок. И, да - друзей приглашать можно, они помогут тебе стать 100 счастливицей</p>
+      <ul class="section--instruction__steps-list">
+        <li class="section--instruction__step-item">Сделай селфи с женихом</li>
+        <li class="section--instruction__step-item">Загрузи в нашу группу</li>
+        <li class="section--instruction__step-item">Попроси друзей помочь</li>
+      </ul>
+    </div>
+    <div class="section section--socials">
+      <div class="section__overlay"></div>
+      <div class="section__content-wrapper">
+        <h2 class="heading--big">Мы в социальных сетях</h2>
+        <div class="section--socials__link-wrapper"><a href="#" class="socials_link socials_link--facebook"></a><a href="#" class="socials_link socials_link--insta"></a><a href="#" class="socials_link socials_link--vkontakte"></a><a href="#" class="socials_link socials_link--gplus"></a></div>
+      </div>
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">   </script>
+  <script src="./libs/fullpage/jquery.fullpage.min.js"></script>
+  <script src="./libs/jquery.fittext.js"></script>
+  <script>
+    (function($){
+      $(function(){
+        $('.js-fullpage-wrapper').fullpage({
+          verticalCentered: false,
+          responsiveWidth: '1100'
+        });
+    
+        //- $('.section__title').fitText(1.5);
+        //- $('.mobile-like').fitText(0.2);
+    
+        var operator = $(document),
+          contentWrapper = $('.section__content-wrapper');
+          collapsed = false;
+    
+        operator.scroll(function(){
+          if(operator.scrollTop() > (contentWrapper.offset().top)){
+    
+            if(!collapsed) {
+              collapsed = true;
+              $('.top-bar').addClass('collapsed');
+            }
+    
+          } else {
+    
+            if(collapsed) {
+              $('.top-bar').removeClass('collapsed');
+              collapsed = false;
+            }
+    
+          }
+        });
+      });
+    }(jQuery));
+  </script>
+</body>

@@ -1,0 +1,204 @@
+.top-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: all 0.75s;
+  z-index: 100;
+}
+
+.site-menu {
+  text-align: center;
+  margin-top: 0.5em;
+
+  @at-root &__item {
+    display: inline-block;
+
+    &:first-cild {
+      margin-left: 0;
+    }
+
+    @at-root &-link {
+      font-size: 0.8rem;
+      font-family: "Proxima Nova Light";
+      margin-left: .5em;
+    }
+
+    @at-root &-number {
+      font-size: .7em;
+      font-family: "Proxima Nova Bold Italic";
+    }
+  
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) &-number {
+        color: nth($number-colors, $i);
+      }
+    }
+  }
+}
+
+.site-logo {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1em;
+
+  object {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.scroll-icon {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  @include transform(translateX(-50%));
+}
+
+.section {
+  text-align: center;  
+  padding: 10% 1rem;
+  background: {
+    size: cover;
+    position: 50% 50%;
+  }
+
+  @at-root &--hero-unit {
+    display: table;
+    width: 100%;
+    background: {
+      image: image-url('hero-unit-clear-bg.jpg');
+      size: cover, cover;
+      position: 50% 50%;
+    }
+  }
+
+  @at-root &--instruction {
+    @at-root &__steps-list {
+      margin-top: 1rem;
+    }
+
+    @at-root &__step-item {
+      color: $gold;
+      display: block;
+      padding: 1rem 0 1rem 3rem;
+      text-align: left;
+      background: {
+        size: contain;
+        repeat: no-repeat;
+        position: left center;
+      }
+      margin-top: 0.7rem;
+
+      &:nth-child(1) {
+        margin-top: 0;
+        background: {
+          image: image-url('step-1-mobile-2x.png');
+        }
+      }
+
+      &:nth-child(2) {
+        background: {
+          image: image-url('step-2-mobile-2x.png');
+        }
+        color: $orange;
+      }
+
+      &:nth-child(3) {
+        background: {
+          image: image-url('step-3-mobile-2x.png');
+        }
+        color: $pink;
+      }
+    }
+  }
+
+  @at-root &--socials {
+    display: table;
+    background: {
+      image: image-url('section-socials-bg.jpg');
+    }
+  }
+
+  .socials_link {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: {
+      size: 3rem 3rem;
+      position: 50% 50%;
+      repeat: no-repeat;
+    }
+
+    margin-right: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @at-root &--facebook {
+      background-image: image-url('facebook-icon.svg');
+    }
+
+    @at-root &--insta {
+      background-image: image-url('insta-icon.svg');
+    }
+
+    @at-root &--vkontakte {
+      background-image: image-url('vkontakte-icon.svg');
+    }
+
+    @at-root &--gplus {
+      background-image: image-url('gplus-icon.svg');
+    }
+  }
+
+  @at-root &__title {
+    font-family: "Proxima Nova Bold";
+    text-transform: uppercase;
+    color: $dark-blue;
+  }
+
+  @at-root &__title-small-span {
+    font-size: 0.8em;
+    display: block;
+    text-transform: none;
+    font-family: "Proxima Nova Light";
+  }
+  
+  @at-root &__overlay {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: {
+      color: rgba(#fff, .6);
+    }
+  }
+
+  @at-root &__content-wrapper {
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+    vertical-align: middle;
+  }
+
+  img {
+    display: block;
+    margin: 1rem auto;
+    width: 3rem;
+  }
+}
+
+.mobile-like {
+  text-transform: uppercase;
+  color: $dark-blue;
+  font-family: "Proxima Nova Bold";
+}
+
+.collapsed {
+  transform: translateY(-100%);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  title Организация свадьбы за LIKE - Свадебное агентство "Любо-Дорого"
+  link(rel="stylesheet", href="./libs/fullpage/jquery.fullpage.min.css")
+  link(rel="stylesheet", href="style.css")
+body
+  .top-bar
+    .site-logo
+      object(data="images/logo_blue.svg" type="image/svg+xml")
+    ul.site-menu
+      li.site-menu__item
+        a.site-menu__item-link(href="#")
+          span.site-menu__item-number 01 
+          Старт
+      li.site-menu__item
+        a.site-menu__item-link(href="#")
+          span.site-menu__item-number 02 
+          Мы в сети
+      li.site-menu__item
+        a.site-menu__item-link(href="#")
+          span.site-menu__item-number 03 
+          Условия 
+      li.site-menu__item
+        a.site-menu__item-link(href="#")
+          span.site-menu__item-number 04 
+          Контакты
+  object.scroll-icon(data="images/sroll-icon.svg")
+  div.js-fullpage-wrapper
+    
+    .section.section--hero-unit
+      .section__overlay
+      .section__content-wrapper
+        h1.section__title Организация свадьбы 
+          span.section__title-small-span за 
+        div.visible-mobile.mobile-like Like
+
+    .section.section--instruction
+      h2 Инструкция для невесты
+      p Для участия в акции нужно сделать всего 3 простых шага. Сделай селфи-фото с любимым человеком. Загрузи фото в нашей группе в твоей любимой социальной сети. Лайкни запись об акции или попроси друзей помочь тебе сделать необходимое кол-во лайков. Приз того стоит - первые десять невест смогут заказать организацию свадьбы за 5000 грн. Невеста, которая станет 50 - получит 50% скидку. И наконец счастливица, сделавшая 100 лайк - получит организацию свадьбы в подарок. И, да - друзей приглашать можно, они помогут тебе стать 100 счастливицей
+      ul.section--instruction__steps-list
+        li.section--instruction__step-item Сделай селфи с женихом
+        li.section--instruction__step-item Загрузи в нашу группу
+        li.section--instruction__step-item Попроси друзей помочь
+
+    .section.section--socials
+      .section__overlay
+      .section__content-wrapper
+        h2.heading--big Мы в социальных сетях
+        .section--socials__link-wrapper
+           a.socials_link.socials_link--facebook(href="#")
+           a.socials_link.socials_link--insta(href="#")
+           a.socials_link.socials_link--vkontakte(href="#")
+           a.socials_link.socials_link--gplus(href="#")
+
+
+
+  
+  script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")    
+  script(src="./libs/fullpage/jquery.fullpage.min.js")
+  script(src="./libs/jquery.fittext.js")
+  script.
+    (function($){
+      $(function(){
+        $('.js-fullpage-wrapper').fullpage({
+          verticalCentered: false,
+          responsiveWidth: '1100'
+        });
+
+        //- $('.section__title').fitText(1.5);
+        //- $('.mobile-like').fitText(0.2);
+
+        var operator = $(document),
+          contentWrapper = $('.section__content-wrapper');
+          collapsed = false;
+
+        operator.scroll(function(){
+          if(operator.scrollTop() > (contentWrapper.offset().top)){
+
+            if(!collapsed) {
+              collapsed = true;
+              $('.top-bar').addClass('collapsed');
+            }
+
+          } else {
+
+            if(collapsed) {
+              $('.top-bar').removeClass('collapsed');
+              collapsed = false;
+            }
+
+          }
+        });
+      });
+    }(jQuery));

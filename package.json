@@ -1,0 +1,17 @@
+{
+  "name": "ld-lending",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-for-compass": "0.0.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0"
+  }
+}
